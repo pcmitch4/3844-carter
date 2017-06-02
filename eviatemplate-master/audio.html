@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="page-container">
+
+        <div class="navbar navbar-default navbar-inverse" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+                    <a class="navbar-brand" href="index.html">Bacon</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row row-offcanvas row-offcanvas-left">
+                <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li>Audio</li>
+                        <li><a href="video.html">Video</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-9">
+                    <h1>Audio clip</h1>
+
+                    <p>This is an audio clip of Sofia laughing when she was a baby.</p>
+
+                    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/227959739&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+                </div>
+                <footer>
+                    <div class="container text-muted">
+                        <hr/>
+                        <p>An experiment.</div>
+                </footer>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $('[data-toggle=offcanvas]').click(function() {
+                        $('.row-offcanvas').toggleClass('active');
+                    });
+                });
+            </script>
+
+
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" />
+
+</body>
+
+</html>
